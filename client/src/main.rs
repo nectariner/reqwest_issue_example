@@ -19,7 +19,7 @@ async fn main() {
     dbg!(&client);
 
     let res = client
-        .get("http://0.0.0.0:8001/health_check")
+        .get("http://0.0.0.0:8001/")
         .header(CONTENT_TYPE, "application/json")
         .header(ACCEPT, "*")
         .send()
