@@ -47,6 +47,7 @@ thread 'main' panicked at client/src/main.rs:27:10:
 called `Result::unwrap()` on an `Err` value: reqwest::Error { kind: Request, url: Url { scheme: "http", cannot_be_a_base: false, username: "", password: None, host: Some(Ipv4(0.0.0.0)), port: Some(8001), path: "/", query: None, fragment: None }, source: hyper::Error(IncompleteMessage) }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 ```
+* But `cURL-ing` works, and using the python `requests` library also works.
 
 # Run it yourself
 - Clone the repo
